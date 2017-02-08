@@ -1,0 +1,9 @@
+global:
+  logger: stdout
+  workers_engine: fork
+
+loops:
+  simple:
+    logger: 'log/simple_loop.log'
+    period: 2
+    workers_number: 1
