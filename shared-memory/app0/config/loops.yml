@@ -1,0 +1,25 @@
+global:
+  logger: 'log/loops.log'
+loops:
+  blank:
+    loop_name: blank
+  blank0:
+    loop_name: blank
+  blank1:
+    loop_name: blank
+  blank2:
+    loop_name: blank
+  blank3:
+    loop_name: blank
+  blank4:
+    loop_name: blank
+  blank5:
+    loop_name: blank
+  blank6:
+    loop_name: blank
+  blank7:
+    loop_name: blank
+  blank8:
+    loop_name: blank
+  blank10:
+    loop_name: blank
