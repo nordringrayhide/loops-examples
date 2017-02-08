@@ -1,0 +1,15 @@
+# frozen_string_literal: true
+source "https://rubygems.org"
+
+gem 'loops', github: 'tonybyrne/loops'
+gem 'activerecord'
+gem 'get_process_mem'
+
+group :development, :test do
+  gem 'colourer'
+  gem 'rspec'
+  gem 'guard-rspec'
+  gem 'vcr'
+  gem 'webmock'
+  gem 'awesome_print'
+end

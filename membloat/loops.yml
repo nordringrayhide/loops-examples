@@ -1,0 +1,13 @@
+global:
+  logger: stdout
+  colorful_logs: true
+  poll_period: 1
+  pid_file: tmp/loops.pid
+  workers_engine: fork
+
+loops:
+  membloat:
+    max_mem_mb: 300
+    logger: log/membloat_loop.log
+    colourful_logs: true
+    workers_number: 1
