@@ -4,14 +4,18 @@ class SimpleLoop < Loops::Base
   def run
     info 'after fork'
     # ActiveRecord::Base.establish_connection
-    # require 'newrelic_rpm'
-    with_period_of(5) do
+    #
+    #::NewRelic::Agent.after_fork {
+    #require 'newrelic_rpm'
+    #}
+    with_period_of(50) do
       begin
         info 'Tick Tack'
+        ::NewRelic::Agent.record_custom_event('Clockwork777', message: 'Tick Tack', time: Time.now.utc.to_i)
       ensure
         info 'before fork'
         # ActiveRecord::Base.connection.disconnect!
-        # ::NewRelic::Agent.shutdown
+        #::NewRelic::Agent.shutdown
         exit(0)
       end
     end
