@@ -1,4 +1,4 @@
 .*
 !.gitignore
 tmp
-log/*.log
+*.log
