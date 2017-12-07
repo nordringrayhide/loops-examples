@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require "redis-queue"
+
+def queue
+  @queue ||= begin
+               redis = Redis.new
+               queue = Redis::Queue.new('q_test','bp_q_test',  :redis => redis)
+               queue
+             end
+end
+
+require 'pry'
+pry

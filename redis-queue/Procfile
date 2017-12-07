@@ -1,0 +1,2 @@
+redis: redis-server
+loops: bundle exec loops start -c loops.yml -f none --require=./app -l loops
