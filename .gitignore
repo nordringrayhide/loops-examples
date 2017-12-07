@@ -3,3 +3,4 @@
 tmp
 !.keep
 *.log
+shared-memory/app0/vendor

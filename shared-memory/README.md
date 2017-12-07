@@ -1,4 +1,11 @@
-# Shared Memory
+# Loops Shared Memory
+
+```
+vagrant up
+vagrant ssh
+cd /vagrant 
+bundle install --path vendor/bundle
+```
 
 ## As Processes
 
